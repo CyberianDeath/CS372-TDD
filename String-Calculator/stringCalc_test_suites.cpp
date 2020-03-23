@@ -12,4 +12,17 @@ TEST_CASE( "Function return types are correct")
             REQUIRE(0 == Add(""));
         }
     }
+    SECTION( "Add - passed single value" )
+    {
+        {
+            auto answ = Add("2");
+            INFO("Add returned " << answ << "instead of 2");
+            REQUIRE(2 == answ);
+        }
+        {
+            auto answ = Add("2.0");
+            INFO("Add returned " << answ << "instead of 2");
+            REQUIRE(2 == answ);
+        }
+    }
 }

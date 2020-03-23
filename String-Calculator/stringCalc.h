@@ -7,6 +7,7 @@
 #define FILE_STRINGCALC_H_INCLUDED
 
 #include <string>
+#include <sstream>
 
 int Add(std::string);
 

@@ -8,5 +8,12 @@
 #include "catch.hpp"
 
 int Add(std::string numbers){
-    return 0;
+    if (numbers == ""){
+        return 0;
+    }
+    int val;
+    std::istringstream sis (numbers);
+    sis >> val;
+    return val;
+
 }
