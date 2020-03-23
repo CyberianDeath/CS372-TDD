@@ -16,8 +16,8 @@ void userPause()
 int main(int argc,
          char *argv[])
 {
-    const std::string tname = "Project 3 functions & templates"
-                              " - CS 311 Proj 3, Ex A, B, C, D";
+    const std::string tname = "String Calculator functions"
+                              " - CS 372";
                              // Printable name for this test suite
     Catch::Session session;  // Primary Catch object
     int catchresult;         // Catch return code; for return by main

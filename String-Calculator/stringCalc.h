@@ -8,10 +8,6 @@
 
 #include <string>
 
-class stringCalc{
-public:
-    stringCalc(std::string);
-private:
+int Add(std::string);
 
-}
 #endif
