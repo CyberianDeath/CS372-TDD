@@ -11,9 +11,16 @@ int Add(std::string numbers){
     if (numbers == ""){
         return 0;
     }
-    int val;
+    int val1;
+    int val2 = 0;
+    char com;
     std::istringstream sis (numbers);
-    sis >> val;
-    return val;
+    sis >> val1;
+    if(sis.tellg() == -1){
+        sis.ignore(1,',');
+        sis >> val2;
+    }
+    int sum = val1 + val2;
+    return sum;
 
 }
